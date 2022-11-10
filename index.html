@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    /> -->
+    <title>Javascript on steroids</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="challeenge">
+        <h1>challenge1: your age in Days</h1>
+        <section>
+          <div>
+            <button id="blue" class="yellow" onclick="ageInDays()">click me</button>
+          </div>
+          <div>
+            <button class="blue" onclick="howOld()">click again</button>
+          </div>
+          <div>
+           <button class="red" onclick="reset()">reset</button>
+          </div>
+          <div>
+            <button class="green" onclick="cancelYear()">cancel year</button>
+          </div>
+            <!-- <div>
+          <button id="flex-box-result"></button>
+            </div> -->
+        <div>
+          <button id="reclick" onclick="reclick">     .     </button>
+        </div>
+      </section>
+      </div>
+      <div class="challeenge">
+        <h1>challenge2: Cat Generator</h1>
+      
+        <header>
+          <button class="blue" onclick="generateCat()">generate cat</button>
+          
+          <div>
+           <button class="yellow" id="catGen" onclick="catGen()">hallo</button>
+          </div>
+        </header>
+          <p id="cat-images" > </p>
+        </header>
+     </div>
+        <div class="challeenge">
+         <h1>challenge3: Rock paper Scissors</h1>
+        
+         <section class="rpsGame" id="rpsimages">
+          <img src="images/rock.jpg"   id="rock"  onclick="rpsGame(this)" alt="">
+          <img src="images/paper.jpeg"   id="paper"  onclick="rpsGame(this)"  alt="">
+          <img src="images/scissors.jpeg" id="scissors"  onclick="rpsGame(this)"  alt="">
+         </section>
+      </div>
+       <div class="challeenge four">
+        <h2 id="change-my-color">challenge4: change the color of all buttons!!</h2> </div>
+        <div class="flexbox-pickcolors">
+        <form action="">
+          <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+            <option value="random">Random</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="reset">Reset</option>
+          </select>
+          </form>
+          <button class="yellow">wee!</button>
+          <button class="green">yahoo!</button>
+          <button class="red">google!</button>
+          <button class="blue">facebook!</button>
+          </div>
+      <div class="challeenge">
+
+        <!-- black jack challenge-->
+        <h2>challenge 5: Blackjack </h2>
+        <h3> 
+          <span id="blackjack-result">Let's play!!!</span>
+        </h3>
+      </div>
+
+        <div class="flex-blackjack-row1">
+          <div class="wrapper">
+           <div id="your-box">
+            <h2>you: <span id="your-black-jack-result">0</span> </h2>
+            <!-- <img src="images/9.png" alt=""> -->
+           </div>
+         </div>
+        
+         <div class="wrapper">
+           <div id="dealerbox">
+            <h2>Dealer: <span id="Dealer-black-jack-result">0</span> </h2>
+          </div>
+          
+        </div>
+
+      </div>
+      <div class="flex-blackjack-row-2">
+        <div>
+          <button class="btn-lg blue mr-2" id="blackjack-hit-button">Hit</button>
+          <button class="btn-lg yellow mr-2" id="black-jack-stand-button">Stand</button>
+          <button class="btn-lg red mr-2" id="blackjack-deal-button">Deal</button>
+        </div>
+      </div>
+   
+
+        <div class="flexbox-blackjackrow3">
+          <table>0
+            <tr>
+              <th>wins</th>
+              <th>losses</th>
+              <th>draw</th>                                                                                                                                                
+            </tr>
+               <hr>
+            <tr>
+              <td><span id="you win"> 0 </span></td>
+              <td><span id="you lost">0</span> </td>
+              <td><span id="you drew">0</span></td>
+            </tr>
+          </table>
+        </div>
+    </div>
+     <script src="script.js"></script>
+     <div style="margin-top:500px"></div>
+  </body>
+</html>
+ <div style="margin: top 500px;"></div>
